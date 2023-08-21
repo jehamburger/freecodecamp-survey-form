@@ -8,6 +8,50 @@
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</ption>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+      <form id="survey-form" action="submit" method="post">
+      <fieldset>
+          <label for="name">Name
+            <input type="text" name="name" id="name" require placeholder="Name">
+          </label>
+          <label for="email">Email
+            <input type="email" name="email" id="email" require placeholder="Email">
+          </label>
+          <label for="age">Age (optional)
+            <input type="number" name="age" id="age" min="13" max="120" placeholder="Age">
+          </label>
+          <label for="role">Which option best describes your current role?
+            <select id="dropdown" name="role">
+              <option value="">(Select one)</option>
+              <option value="Student">Student</option>
+              <option value="Professional">Professional</option>
+            </select>
+          </label>
+          <label>Would you recommend our plataform to a friend?</label>
+          <label for="recommend">
+            <input type="radio" name="recommend" id="recommend"> Yes
+          </label>
+          <label for="recommend">
+            <input type="radio" name="recommend" id="recommend"> No
+          </label>
+          <label for="feature">What is your favorite feature of freeCodeCamp?
+            <select id="feature" name="feature">
+              <option value="">(Select one)</option>
+              <option value="Projects">Projects</option>
+              <option value="Challenges">Challenges</option>
+            </select>
+          </label>
+          <label for="improve">What would you like to see improved? (Check all that apply)
+            <label><input type="checkbox" name="improve" value="Frontend"> Front-end Projects</label>
+            <label><input type="checkbox" name="improve" value="Backend"> Back-end Projects</label>
+          </label>
+          <label for="suggestion">Any comments or suggestions?
+            <textarea rows="20" cols="30" name="suggestion" id="suggestion" placeholder="Enter your comment here ..."></textarea>
+          </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
   </body>
-</html>
+</html
